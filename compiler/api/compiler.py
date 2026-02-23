@@ -255,6 +255,7 @@ def start(format: bool = False):
 
         combinator_match = COMBINATOR_RE.match(line)
         if combinator_match:
+            print(line)
             # noinspection PyShadowingBuiltins
             qualname, id, qualtype = combinator_match.groups()
 
